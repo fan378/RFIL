@@ -1,0 +1,48 @@
+"""
+URL configuration for soybeanBackend project.
+
+The `urlpatterns` list routes URLs to views. For more information please see:
+    https://docs.djangoproject.com/en/4.2/topics/http/urls/
+Examples:
+Function views
+    1. Add an import:  from my_app import views
+    2. Add a URL to urlpatterns:  path('', views.home, name='home')
+Class-based views
+    1. Add an import:  from other_app.views import Home
+    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
+Including another URLconf
+    1. Import the include() function: from django.urls import include, path
+    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+"""
+from django.contrib import admin
+from django.urls import path
+from . import views
+from .views import LongTaskView, GetProgressView
+from .views import index
+
+urlpatterns = [
+    # path("admin/", admin.site.urls),
+    path('', index, name='index'),
+    path('login', index, name='login'),
+    path('home', index, name='home'),
+    path('configuretask', index, name='configuretask'),
+    path('compareandreview', index, name='compareandreview'),
+    path('404', index, name='404'),
+    path('500', index, name='500'),
+    path('auth/login', views.login),
+    path('auth/getUserInfo', views.getUserInfo ),
+    path('upload', views.uploadFile),
+    path('quickupload', views.quickuploadFile),
+    path('uploadTumorHospital', views.uploadTumorHospitalFile),
+    path('generateTumorHospital', views.generateTumorHospital),
+    path('params', views.postParams),
+    path('generate', views.generateSummary),
+    path('generateSixthHospital', views.generateSixthHospital),
+    path('comment', views.saveComment),
+    path('startTask', LongTaskView.as_view(), name='start_task'),
+    path('getProgress', GetProgressView.as_view(), name='get_progress'),
+    path('uploadSixthHospital', views.uploadSixthHospitalFile),
+    path('sixthhospital/image/<str:filename>', views.getSixthHospitalImage),
+    # 肿瘤医院相关API
+    path('zhongliu/process', views.processZhongliuFile),
+]

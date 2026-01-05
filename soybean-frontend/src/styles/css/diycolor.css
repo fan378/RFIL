@@ -1,0 +1,19 @@
+:root {
+  --blue-1: #e2eaf9;
+  --blue-2: #d4e0f9;
+  --blue-3: #c6d6fa;
+  --blue-4: #b8cdfa;
+  --blue-5: #aac3fb;
+  --blue-6: #9cb9fb;
+  --blue-7: #8eaffc;
+  --blue-8: #81a6fc;
+  --blue-9: #739cfc;
+  --blue-10: #6592fd;
+  --blue-11: #5788fd;
+  --blue-12: #497efe;
+  --blue-13: #3b75fe;
+  --blue-14: #2d6bff;
+  --blue-15: #1f61ff;
+  --blue-bg: #1f61ff1a;
+  --n-divider-color: var(--blue-2);
+}
