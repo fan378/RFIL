@@ -1,9 +1,9 @@
 # 复制文件
-docker cp /home/yuancheng/soybean-backend/soybeanBackend/views.py soybean:/code/soybeanBackend/views.py
-docker cp /home/yuancheng/soybean-backend/codes/commons/frontend_constants.py soybean:/code/codes/commons/frontend_constants.py
-docker cp /home/yuancheng/soybean-backend/soybeanBackend/views.py soybean1:/code/soybeanBackend/views.py
-docker cp /home/yuancheng/soybean-backend/static/assets soybean:/code/static/assets
-docker cp /data/yuancheng/yc/ruijin_model/0229_ck36000_sft_stage4_lora_03-27-09-27-27_export_model soybean:/code/ruijin_model
+docker cp ./soybean-backend/soybeanBackend/views.py soybean:/code/soybeanBackend/views.py
+docker cp ./soybean-backend/codes/commons/frontend_constants.py soybean:/code/codes/commons/frontend_constants.py
+docker cp ./soybean-backend/soybeanBackend/views.py soybean1:/code/soybeanBackend/views.py
+docker cp ./soybean-backend/static/assets soybean:/code/static/assets
+docker cp ./model/0229_ck36000_sft_stage4_lora_03-27-09-27-27_export_model soybean:/code/model
 
 # 构建 Docker 镜像
 docker build -t myproject .
