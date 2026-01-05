@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # EMR
 
 ## 前端
@@ -39,3 +40,7 @@ python manage.py runserver 0.0.0.0:8047 --noreload
      http://172.20.137.216:8047
      ```
    - 然后运行前端开发环境
+=======
+# RFIL
+Removing First, Infilling Later: Decoupling Environment-Dependent Facts to Mitigate Hallucinations in Clinical Discharge Summaries
+>>>>>>> f26f79eecf382082b4d2630980396bc0feaf0c24
