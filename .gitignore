@@ -1,0 +1,5 @@
+
+# large jsonl files (do not upload to GitHub)
+datasets/MIMIC-IV/datas/train/*.jsonl
+datasets/MIMIC-IV/datas/val/*.jsonl
+datasets/MIMIC-IV/datas/test/*.jsonl
