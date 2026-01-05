@@ -40,10 +40,10 @@ USE_API = True
 
 global model_path,tokenizer,model
 # 默认模型
-# model_path = '/data/yuguangya/ALLYOUNEED/Qwen3/Qwen3-8B'
+# model_path = './Qwen3-8B'
 # 训练后模型
-model_path = '/data/chuyuxiang/Models/Qwen3-8B-lora-merged'
-post_model_path = '/root/nas/llm_models/Qwen3-4B'
+model_path = './Qwen3-8B-lora-merged'
+post_model_path = './Qwen3-4B'
 
 tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
 model = ''
