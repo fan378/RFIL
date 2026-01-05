@@ -4,4 +4,3 @@ datasets/MIMIC-IV/datas/val/*.jsonl
 datasets/MIMIC-IV/datas/test/*.jsonl
 
 # block MIMIC-IV dataset (too large for GitHub)
-datasets/MIMIC-IV/
